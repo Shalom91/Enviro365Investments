@@ -18,5 +18,6 @@ public class Product {
     private ProductType type;
 
     @ManyToOne
+    @JoinColumn(name = "investor_id")
     private Investor investor;
 }
